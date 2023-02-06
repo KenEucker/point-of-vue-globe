@@ -4,8 +4,13 @@
 
 ## Usage
 
-```js
-import VueMonoRepo from 'vue-monorepo-lib'
-
-// TODO: DEMONSTRATE API
+```ts
+...
+import { createApp } from 'vue'
+import PointOfVuePlugin from 'point-of-vue'
+...
+const app = createApp(App)
+...
+app.use(PointOfVuePlugin)
+...
 ```

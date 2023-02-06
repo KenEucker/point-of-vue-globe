@@ -1,8 +1,10 @@
 import type { App } from 'vue'
-import MyComponent from './Component.vue'
+import ExampleCoreComponent from './core/ExampleCoreComponent/ExampleCoreComponent.vue'
+import ExampleUtilitiesComponent from './utilities/ExampleUtilitiesComponent/ExampleUtilitiesComponent.vue'
 
-function install(app: App) {
-	app.component('MyComponent', MyComponent)
+function PointOfVuePlugin(app: App) {
+	app.component('ExampleCoreComponent', ExampleCoreComponent)
+	app.component('ExampleUtilitiesComponent', ExampleUtilitiesComponent)
 }
 
-export { MyComponent, install }
+export { ExampleCoreComponent, ExampleUtilitiesComponent, PointOfVuePlugin }

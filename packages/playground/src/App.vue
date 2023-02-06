@@ -1,16 +1,33 @@
 <template>
-	<HelloWorld msg="Hello Vue 3.0 + Vite" />
-	<MyComponent message="Hello from 'vue-monorepo-lib'" />
+	<div class="text-center">
+		<h1 class="text-5xl my-5">Point Of Vue Globe</h1>
+		<div class="my-10">
+			<a href="http://localhost:8100/">
+				<h2 class="text-3xl my-3">Go To The Point Of Vue Playground</h2>
+				<p>
+					Play with each component and it's properties.
+				</p>
+			</a>
+		</div>
+		<div class="my-10">
+			<a href="http://localhost:8200/">
+				<h2 class="text-3xl my-3">Go To The Point Of Vue Docs</h2>
+				<p>
+					Read the full documentation for the Point Of Vue Components.
+				</p>
+			</a>
+		</div>
+		<div class="my-10">
+			<h2 class="text-3xl my-3">Point Of Vue Components Demo</h2>
+			<ExampleCoreComponent message="Hello from 'point-of-vue'" />
+		</div>
+	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-// import { MyComponent } from 'vue-monorepo-lib' // -> registered via plugin in main.js
+// import { ExampleComponent } from 'point-of-vue' // -> registered via plugin in main.js
 
 export default {
 	name: 'App',
-	components: {
-		HelloWorld,
-	},
 }
 </script>

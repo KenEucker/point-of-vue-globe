@@ -1,10 +1,9 @@
 module.exports = {
-  title: 'VueMonoRepoLib', //TODO: CHANGE_ME
-  description: 'Replace this descriptions with something nice!',
+  title: 'point-of-vue',
+  description: 'The globally modifiable frontend that is the point-of-vue ecosystem',
   themeConfig: {
     editLink: {
-      //TODO: CHANGE_ME
-      pattern: 'https://github.com/linusborg/vue-lib-monorepo-template/edit/main/docs/:path',
+      pattern: 'https://github.com/KenEucker/point-of-vue-globe/edit/main/docs/:path',
       text: 'Edit this page on GitHub' 
     },
     lastUpdated: 'Last Updated',
@@ -15,20 +14,33 @@ module.exports = {
         link: '/guide/getting-started',
       },
       {
-        text: 'API',
-        link: '/api',
+        text: 'Components',
+        link: '/components/',
       },
     ],
     sidebar: {
       '/guide/': getGuideSidebar(),
-      '/api/': getApiSidebar(),
+      '/components/': getApiSidebar(),
     },
   },
 }
 
 function getGuideSidebar() {
-  return [{ text: 'Getting Started', link: '/guide/getting-started' }]
+  return [
+		{ text: 'Installation', link: '/guide/installation' },
+		{ text: 'Getting Started', link: '/guide/getting-started' },
+		{ text: 'Components', link: '/components/' },
+	]
 }
 function getApiSidebar() {
-  return []
+  return [
+		{
+			text: 'Components',
+			link: '/components/',
+			items: [
+				{ text: 'ExampleCoreComponent', link: '/components/ExampleCoreComponent' },
+				{ text: 'ExampleUtilitiesComponent', link: '/components/ExampleUtilitiesComponent' },
+			],
+		},
+	]
 }

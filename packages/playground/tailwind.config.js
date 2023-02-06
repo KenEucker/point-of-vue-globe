@@ -1,6 +1,7 @@
 module.exports = {
-	purge: ['./index.html', './src/**/*.vue', './src/**/*.ts'],
-	darkMode: false, // or 'media' or 'class'
+	mode: 'jit',
+	content: ['./index.html', './src/**/*.vue', './src/**/*.ts', './node_modules/@point-of-vue/lib/src/**/*.vue'],
+	darkMode: 'class',
 	theme: {
 		extend: {},
 	},

@@ -1,11 +1,3 @@
-# `docs`
+# The Point Of Vue Globe Documentation
 
-> TODO: description
-
-## Usage
-
-```
-const docs = require('docs');
-
-// TODO: DEMONSTRATE API
-```
+These are the docs for the components in the point of vue globe.

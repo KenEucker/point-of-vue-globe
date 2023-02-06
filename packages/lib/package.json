@@ -1,11 +1,11 @@
 {
-  "name": "@linusborg/lib",
-  "description": "CHANGE_ME This is a placeholder description, please change me as well as the name above me.",
+  "name": "@point-of-vue/lib",
+  "description": "The global library that is the point-of-vue ecosystem of components",
   "version": "0.0.1",
   "private": false,
-  "author": "CHANGE_ME Thorsten Lünborg <t.luneborg@googlemail.com>",
+  "author": "Ken Eucker <keneucker@gmail.com>",
   "homepage": "",
-  "license": "MIT",
+  "license": "AGPL-3.0-or-later",
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -25,6 +25,8 @@
     "README.md"
   ],
   "scripts": {
+    "dev": "concurrently \"yarn watch\" \"yarn dev-types\"",
+    "watch": "vite build --watch",
     "dev-server": "pnpm --parallel vite",
     "dev-types": "vue-tsc  --noEmit -p tsconfig.app.json --watch",
     "build": "yarn build-lib && yarn build-types",
@@ -35,12 +37,13 @@
     "test-ci": "vitest --run"
   },
   "dependencies": {
-    "@linusborg/lib": "workspace:*"
+    "@point-of-vue/lib": "workspace:*"
   },
   "peerDependencies": {
     "vue": "^3.0.4"
   },
   "devDependencies": {
+    "concurrently": "^7.6.0",
     "vite": "^4.0.4",
     "vitest": "^0.28.3"
   }

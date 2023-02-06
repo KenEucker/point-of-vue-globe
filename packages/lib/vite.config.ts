@@ -29,8 +29,8 @@ export default defineConfig({
 			output: {
 				banner: `
 /**
- *  Copyright ${new Date(Date.now()).getFullYear()} Thorsten Luenborg 
- *  @license MIT
+ *  Copyright ${new Date(Date.now()).getFullYear()} Ken Eucker
+ *  @license AGPL-3.0-or-later
 **/
 `,
 				exports: 'named',

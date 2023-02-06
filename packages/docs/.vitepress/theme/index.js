@@ -1,9 +1,9 @@
 // import plugin from 'portal-vue'
 import DefaultTheme from 'vitepress/theme'
-import { install } from '@linusborg/lib'
+import { PointOfVuePlugin } from '@point-of-vue/lib'
 export default {
   ...DefaultTheme,
   enhanceApp({ app }) {
-    app.use(install)
+    app.use(PointOfVuePlugin)
   },
 }

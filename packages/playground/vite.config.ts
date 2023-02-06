@@ -1,29 +1,35 @@
+// vite.config.js
+/// <reference types="histoire" />
+
 import vue from '@vitejs/plugin-vue'
 import { defineConfig } from 'vite'
-import WindiCSS from 'vite-plugin-windicss'
 process.env.NODE_ENV
+
 export default defineConfig({
-	plugins: [vue(), WindiCSS()],
+	plugins: [vue()],
 	resolve: {
 		alias: {
 			// we alias to the lib's source files in dev
 			// so we don't need to rebuild the lib over and over again
-			'@linusborg/lib':
+			'@point-of-vue/lib':
 				process.env.NODE_ENV === 'production'
-					? '@linusborg/lib'
-					: '@linusborg/lib/src/index.ts',
+					? '@point-of-vue/lib'
+					: '@point-of-vue/lib/src/index.ts',
 		},
 		dedupe: ['vue'],
 	},
 	build: {
 		// we don't minify so we can look at the bundle ouput. Change if you wanna deploy the playground
-		minify: false,
+		minify: process.env.NODE_ENV === 'production',
 		rollupOptions: {
 			// Comment in to move vue out of the bundle - easier to look at it that way.
 			// external: ['vue'],
 		},
 	},
 	optimizeDeps: {
-		exclude: ['@linusborg/lib'],
+		exclude: ['@point-of-vue/lib'],
+	},
+	histoire: {
+		// your Histoire configuration
 	},
 })

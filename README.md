@@ -1,33 +1,18 @@
-# Vue Library-Monorepo Template
+# Point Of Vue
 
-> My personal repo template for developing Vue 3 libraries in a monorepo powered by yarn workspaces
+Point Of Vue is a web 3 social sharing network for the programmable web. POV integrates with second-party APIs (second party are APIs you have access to as a user)
 
-**STATE**: Still working on this here and ther, but it's working fine, usually ☺️
+## Point Of Vue Globe
+
+This project is the "globe", or "globally known", of components that are used all across the point of vue ecosystem. Vue components added to this project can be displayed on any point-of-vue page.
 
 ## What is this and who is it for?
 
-This is a template to use for new Vue 3 library projects. It comes with a lot of [useful stuff pre-configured](#features) because I'm lazy.
+This project can be used as a standalone component library and used on any web page. However, most of these components will have some form of data query that accompanies the code which are configured to use the point-of-vue globe of data. If you intend to use these components outside of the point-of-vue ecosystem you may experience issues.
 
-This template is primarily meant for myself (but you can of course you it any way you please!). I wanted a template to quickly reach for when I want to start a new Vue project, especially for libraries.
+This project has a license for the code that encompasses each vue component, but the vue components themselves are individually licensed by the person/people who created in and might be licensed differently. Please pay attention to the license associated with each component before including the code in your project.
 
-As such, it is pretty opinionated, and probably does some things in way you don't like, or is missing something you deem essential. That's fine. Fork it and make it your own :)
-
-## Features
-
-* ✅ Full Typescript support for the whole dev workflow
-* ⚡️  Ergonomic and easy workflow completely powered by Vite & PNPM:
-  * 🎯 Build your libraries with [Vite](https://github.com/vitejs/vite)
-  * ⛱️ Typechecking & Generating declaration files with `vue-tsc`(https://github.com/johnsoncodehk/volar/tree/master/vue-language-tools/vue-tsc)
-  * 🏈 Integrated playground app powered by [Vite](https://github.com/vitejs/vite) as well
-* 💊 Unit Tests with [Vitest](https://www.vitest.dev)
-* 🖍 Linting with `eslint` and `prettier`
-  * [PLANNED] linting & fixing for staged files (`lint-staged`)
-* 📚 Documentation powered by [Vitepress](https://vitepress.vuejs.org)
-  * Ready to be deployed to [Netlify](https://www.netlify.com)
-
-## Documentation, FAQ and Troubleshooting
-
-see Github wiki: ...(TBD)
+# Development
 
 ## Commands
 
@@ -39,21 +24,33 @@ yarn start
 
 We use pnpm to run commands in individual workspaces as needed.
 
-### build
+### Build
+```
+pnpm build
+```
 
 Build everything: library packages, docs and playground app
-### `pnpm dev`
 
-starts the `Vite` dev server for the playground app for testing playing around with your libraries manually. 
+### Dev
+```
+pnpm dev
+```
 
-During `play`, no bundling has to be done as all of the library package's code is compiled JIT in the playground app.
+starts the `Vite` dev server for the playground app, landing page app, and docs for testing and playing around with your libraries. Hot Module Reloading is enabled and all files are watched and respective applications reloaded when necessary. 
 
-This app can also be used for end-to-end tests (tooling for that currently not included in this template)
+During `dev`, no bundling has to be done as all of the library package's code is compiled JIT in the playground app. Changes to the components in the component library will auto-compile the library.
 
-### `pnpm lint`
+### Lint
+
+```
+pnpm lint
+```
 
 Run eslint on all packages
 
-### `pnpm test`
+### Test
+```
+pnpm test
+```
 
 Run `vitest` unit tests on all packages. Tests will start in watch mode by default. To ru tests once, you can run `test-ci` instead.

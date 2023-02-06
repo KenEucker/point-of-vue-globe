@@ -1,10 +1,9 @@
 import { createApp } from 'vue'
-import { install as MyLibPLugin } from '@linusborg/lib'
+import { PointOfVuePlugin } from '@point-of-vue/lib'
 import App from './App.vue'
-import 'virtual:windi.css'
 import './index.css'
 
 const app = createApp(App)
 
-app.use(MyLibPLugin)
+app.use(PointOfVuePlugin)
 app.mount('#app')

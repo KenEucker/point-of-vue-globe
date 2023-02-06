@@ -1,5 +1,5 @@
 {
-  "name": "@point-of-vue/lib",
+  "name": "@point-of-vue-globe/lib",
   "description": "The global library that is the point-of-vue ecosystem of components",
   "version": "0.0.1",
   "private": false,
@@ -37,7 +37,7 @@
     "test-ci": "vitest --run"
   },
   "dependencies": {
-    "@point-of-vue/lib": "workspace:*"
+    "@point-of-vue-globe/lib": "workspace:*"
   },
   "peerDependencies": {
     "vue": "^3.0.4"

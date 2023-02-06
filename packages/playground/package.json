@@ -12,7 +12,7 @@
     "story:preview": "histoire preview"
   },
   "dependencies": {
-    "@point-of-vue/lib": "workspace:*",
+    "@point-of-vue-globe/lib": "workspace:*",
     "@tailwindcss/jit": "^0.1.18",
     "autoprefixer": "^10.4.13",
     "histoire": "^0.13.0",

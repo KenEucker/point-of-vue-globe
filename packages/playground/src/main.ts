@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import { PointOfVuePlugin } from '@point-of-vue/lib'
+import { PointOfVuePlugin } from '@point-of-vue-globe/lib'
 import App from './App.vue'
 import './index.css'
 

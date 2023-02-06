@@ -1,10 +1,10 @@
 import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
-import Component from '../Component.vue'
+import ExampleCoreComponent from '../../core/ExampleCoreComponent/ExampleCoreComponent.vue'
 
 describe('Sample Test Suite', () => {
 	it('mounts', () => {
-		const wrapper = mount(Component, {
+		const wrapper = mount(ExampleCoreComponent, {
 			props: {
 				message: 'Test in Vitest',
 			},

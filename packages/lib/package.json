@@ -36,9 +36,6 @@
     "test": "vitest",
     "test-ci": "vitest --run"
   },
-  "dependencies": {
-    "@point-of-vue-globe/lib": "workspace:*"
-  },
   "peerDependencies": {
     "vue": "^3.0.4"
   },

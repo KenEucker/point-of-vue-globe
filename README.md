@@ -10,7 +10,7 @@ This project is the "globe", or "globally known", of components that are used al
 
 This project can be used as a standalone component library and used on any web page. However, most of these components will have some form of data query that accompanies the code which are configured to use the point-of-vue globe of data. If you intend to use these components outside of the point-of-vue ecosystem you may experience issues.
 
-This project has a license for the code that encompasses each vue component, but the vue components themselves are individually licensed by the person/people who created in and might be licensed differently. Please pay attention to the license associated with each component before including the code in your project.
+This project has a license for the code that encompasses each vue component, but the vue components themselves are individually licensed by the person/people who created in and might be licensed differently. Please pay attention to the license associated with each component before including the code in your project. If a component does not have a license in the folder it is encompassed within, then it's license is AGPL-3.0-or-later. (this is done to save space)
 
 # Development
 

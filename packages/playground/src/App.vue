@@ -19,13 +19,13 @@
 		</div>
 		<div class="my-10">
 			<h2 class="text-3xl my-3">Point Of Vue Components Demo</h2>
-			<ExampleCoreComponent message="Hello from 'point-of-vue'" />
+			<ExampleCoreComponent message="Hello from 'point-of-vue-globe-lib'" />
 		</div>
 	</div>
 </template>
 
 <script>
-// import { ExampleComponent } from 'point-of-vue' // -> registered via plugin in main.js
+// import { ExampleComponent } from 'point-of-vue-globe-lib' // -> registered via plugin in main.js
 
 export default {
 	name: 'App',

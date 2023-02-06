@@ -1,7 +1,7 @@
 {
-  "name": "@point-of-vue-globe/lib",
+  "name": "point-of-vue-globe-lib",
   "description": "The global library that is the point-of-vue ecosystem of components",
-  "version": "0.0.0-alpha.1",
+  "version": "0.0.0-alpha.2",
   "private": false,
   "author": "Ken Eucker <keneucker@gmail.com>",
   "homepage": "",

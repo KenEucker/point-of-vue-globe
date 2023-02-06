@@ -11,10 +11,10 @@ export default defineConfig({
 		alias: {
 			// we alias to the lib's source files in dev
 			// so we don't need to rebuild the lib over and over again
-			'@point-of-vue-globe/lib':
+			'point-of-vue-globe-lib':
 				process.env.NODE_ENV === 'production'
-					? '@point-of-vue-globe/lib'
-					: '@point-of-vue-globe/lib/src/index.ts',
+					? 'point-of-vue-globe-lib'
+					: 'point-of-vue-globe-lib/src/index.ts',
 		},
 		dedupe: ['vue'],
 	},
@@ -27,7 +27,7 @@ export default defineConfig({
 		},
 	},
 	optimizeDeps: {
-		exclude: ['@point-of-vue-globe/lib'],
+		exclude: ['point-of-vue-globe-lib'],
 	},
 	histoire: {
 		// your Histoire configuration

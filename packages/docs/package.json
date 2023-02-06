@@ -11,7 +11,7 @@
     "lint": "eslint '.vitepress/**/*.{ts,vue}'"
   },
   "dependencies": {
-    "@point-of-vue-globe/lib": "workspace:*"
+    "point-of-vue-globe-lib": "workspace:*"
   },
   "devDependencies": {
     "vitepress": "1.0.0-alpha.45"

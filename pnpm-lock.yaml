@@ -42,21 +42,18 @@ importers:
 
   packages/docs:
     specifiers:
-      '@point-of-vue-globe/lib': workspace:*
+      point-of-vue-globe-lib: workspace:*
       vitepress: 1.0.0-alpha.45
     dependencies:
-      '@point-of-vue-globe/lib': link:../lib
+      point-of-vue-globe-lib: link:../lib
     devDependencies:
       vitepress: 1.0.0-alpha.45
 
   packages/lib:
     specifiers:
-      '@point-of-vue-globe/lib': workspace:*
       concurrently: ^7.6.0
       vite: ^4.0.4
       vitest: ^0.28.3
-    dependencies:
-      '@point-of-vue-globe/lib': 'link:'
     devDependencies:
       concurrently: 7.6.0
       vite: 4.1.1
@@ -65,21 +62,21 @@ importers:
   packages/playground:
     specifiers:
       '@histoire/plugin-vue': ^0.13.0
-      '@point-of-vue-globe/lib': workspace:*
       '@tailwindcss/jit': ^0.1.18
       '@vue/compiler-sfc': ^3.0.4
       autoprefixer: ^10.4.13
       concurrently: ^7.6.0
       histoire: ^0.13.0
+      point-of-vue-globe-lib: workspace:*
       postcss: ^8.4.21
       tailwindcss: ^3.2.4
       vite: ^4.0.4
       vue: ^3.0.4
     dependencies:
-      '@point-of-vue-globe/lib': link:../lib
       '@tailwindcss/jit': 0.1.18_4ew3wq4i6cpewpgnousokwnsua
       autoprefixer: 10.4.13_postcss@8.4.21
       histoire: 0.13.0_vite@4.1.1
+      point-of-vue-globe-lib: link:../lib
       postcss: 8.4.21
       tailwindcss: 3.2.4_postcss@8.4.21
       vue: 3.2.47

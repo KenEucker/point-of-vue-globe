@@ -4,17 +4,13 @@
 		<div class="my-10">
 			<a href="http://localhost:8100/">
 				<h2 class="text-3xl my-3">Go To The Point Of Vue Playground</h2>
-				<p>
-					Play with each component and it's properties.
-				</p>
+				<p>Play with each component and it's properties.</p>
 			</a>
 		</div>
 		<div class="my-10">
 			<a href="http://localhost:8200/">
 				<h2 class="text-3xl my-3">Go To The Point Of Vue Docs</h2>
-				<p>
-					Read the full documentation for the Point Of Vue Components.
-				</p>
+				<p>Read the full documentation for the Point Of Vue Components.</p>
 			</a>
 		</div>
 		<div class="my-10">

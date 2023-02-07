@@ -4,5 +4,5 @@
 	</Story>
 </template>
 <script setup name="ExampleCoreComponentStory">
-import {ExampleCoreComponent} from 'point-of-vue-globe-lib'
+import { ExampleCoreComponent } from 'point-of-vue-globe-lib'
 </script>

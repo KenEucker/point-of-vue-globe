@@ -1,4 +1,5 @@
 dist/
 packages/*/dist
 packages/*/types
-node_modules/
+packages/playground/playground
+/**/node_modules/*

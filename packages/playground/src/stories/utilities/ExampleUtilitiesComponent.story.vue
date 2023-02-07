@@ -4,5 +4,5 @@
 	</Story>
 </template>
 <script setup name="ExampleUtilitiesComponentStory">
-import {ExampleUtilitiesComponent} from 'point-of-vue-globe-lib'
+import { ExampleUtilitiesComponent } from 'point-of-vue-globe-lib'
 </script>
